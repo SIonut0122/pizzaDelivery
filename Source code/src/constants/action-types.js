@@ -1,0 +1,12 @@
+
+export const SET_SIGNIN_CONTAINER    = 'SET_SIGNIN_CONTAINER';
+export const SET_CART_CONTAINER      = 'SET_CART_CONTAINER';
+export const SET_PROCEED_ADDRDEL     = 'SET_PROCEED_ADDRDEL';
+export const SET_SIGNEDIN_USER       = 'SET_SIGNEDIN_USER';
+export const SET_GOOGLEUSER_INFO     = 'SET_GOOGLEUSER_INFO';
+export const SET_VIEWPRODUCT_DETAILS = 'SET_VIEWPRODUCT_DETAILS';
+export const SET_PRODUCT_DETAILS     = 'SET_PRODUCT_DETAILS';
+export const ADD_TO_CART             = 'ADD_TO_CART';
+export const TOTAL_CART_SUM          = 'TOTAL_CART_SUM';
+export const SAUCE_TO_CART           = 'SAUCE_TO_CART';
+export const SET_DEF_DISPLAYNAME     = 'SET_DEF_DISPLAYNAME';

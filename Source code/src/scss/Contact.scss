@@ -1,0 +1,265 @@
+
+
+$orangeColor: #ff9800;
+$grayBorder: #BCBCBC;
+@mixin disable-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+}
+
+.contact_container {
+	width: 1200px;
+	max-width: 100%;
+	min-width: 330px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.contact_cont_title {
+	font-weight: bold;
+	font-size: 30px;
+	border-bottom: 1px solid $grayBorder;
+	margin-bottom: 50px;
+}
+
+.contact_cont_wrapinputs {
+	width: 100%;
+	max-width: 800px;
+	min-height: 350px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+
+.ct_w_haveacc_questtxt {
+	span {
+		cursor: pointer;
+		color: $orangeColor;
+		&:hover {
+			text-decoration: underline;
+			opacity: 0.8;
+		}
+	}
+}
+
+.ct_w_wrtmsgtxt {
+	font-weight: bold;
+	font-size: 19px;
+	margin: 10px 0 10px 0;
+}
+
+.ctwrapinputs {
+	min-width: 100%;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ctwrinp_title {
+	margin: 5px 0 5px 0;
+	i {
+		color: $orangeColor;
+		font-weight: bold;
+		font-size: 15px;
+	}
+}
+
+.ctwrinp_span {
+	max-width: 100%;
+	height: 38px;
+	width: 400px;
+	border: none;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+	input,
+	textarea {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 4px;
+		padding: 0 5px 0 5px;
+		font-size: 15px;
+		border: 1px solid #000;
+		border-radius: 4px;
+		outline: 0;
+	}
+}
+
+.ctwrinp_span_txtarea {
+	width: 500px;
+	height: 220px;
+	position: relative;
+	textarea {
+		height: 100%;
+		resize: none;
+		padding: 10px;
+	}
+}
+
+
+/* RIGHT DETAILS */
+
+.contact_cont_wrapdetails {
+	width: 100%;
+	max-width: 550px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	.ctwdet_wrdet {
+		font-size: 20px;
+		font-weight: bold;
+		color: $orangeColor;
+		margin-top: 20px;
+	}
+}
+
+.ctwdet_wrapsocial {
+	min-height: 50px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	span {
+		margin-top: 5px;
+	}
+	i {
+		font-size: 20px;
+		color: $orangeColor;
+		margin: 0 5px 0 5px;
+	}
+}
+
+.ctwdet_wrapdet_sectwo {
+	min-width: 100%;
+	min-height: 300px;
+	border-top: 1px solid $grayBorder;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: 20px;
+	.ctwedet_wsectwo_firstxt {
+		font-size: 19px;
+	}
+	.ctwedet_wsectwo_fsocial {
+		margin-top: 30px;
+		color: $orangeColor;
+		transition: 0.1s all;
+		width: 300px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $grayBorder;
+		i {
+			font-size: 30px;
+			margin: 0 8px 0 8px;
+			font-weight: bold;
+			cursor: pointer;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		.fa-facebook {
+			color: #2077D9;
+		}
+		.fa-instagram {
+			color: #CF46DB;
+		}
+		.fa-twitter {
+			color: #75A9E4;
+		}
+	}
+}
+
+.ctwedet_wsectwo_sectxt {
+	margin: 20px 0 10px 0;
+}
+
+.ctwedet_wsectwo_cid {
+	font-size: 12px;
+}
+
+.ctwrinp_politdate {
+	min-width: 100%;
+	padding: 10px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	span:nth-child(2) {
+		margin-top: 20px;
+	}
+	span:nth-child(3) {
+		margin-top: 20px;
+		color: red;
+	}
+}
+
+.ctwring_ct_sendmsgbtn {
+	height: 40px;
+	max-width: 100%;
+	width: 400px;
+	margin: 50px 0 10px 0;
+	background-color: $orangeColor;
+	color: #000;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 0 0 3px 0 #000;
+	transition: 0.1s;
+	opacity: 0.85;
+	@include disable-select;
+	&:hover {
+		opacity: 1;
+	}
+	&:active {
+		box-shadow: 0 0 5px 0 #000;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.contact_container {
+		flex-direction: column;
+	}
+	.contact_cont_wrapinputs {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.contact_cont_wrapinputs {
+		padding: 10px;
+	}
+}
+
+.ctwring_messagesent_msg {
+	margin-top: 20px;
+	font-size: 16px;
+	color: green;
+	font-weight: bold;
+}
+
+.ctwring_messagesent_err {
+	color: red;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+}
+

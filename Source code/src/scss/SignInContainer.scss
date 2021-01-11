@@ -1,0 +1,141 @@
+
+
+$orangeColor: #ff9800;
+@mixin disable-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+}
+
+.signincontainer_container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+}
+
+.signincont_wrap {
+	max-width: 100%;
+	width: 700px;
+	height: 400px;
+	min-width: 250px;
+	background-color: transparent;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* SIGN IN */
+
+.signin_action_div {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.signinup_close_btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-weight: bold;
+	font-size: 40px;
+	color: #fff;
+	cursor: pointer;
+	@include disable-select;
+	&:hover {
+		transition: 0.2s;
+		opacity: 0.9;
+		transform: scale(0.95)
+	}
+}
+
+.signinup_title {
+	font-weight: bold;
+	font-size: 40px;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+
+#w_signin_button {
+	max-width: 100%;
+	min-width: 250px;
+	height: 55px;
+	line-height: 60px;
+	width: 300px;
+	border-radius: 4px;
+	font-weight: bold;
+	margin-top: 140px;
+	color: #000;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0 0 5px 0 #000;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+	animation: bounce 1.3s;
+	@include disable-select;
+	&:active {
+		transition: 0.2s;
+		transform: scale(0.95);
+	}
+	span:nth-child(1) {
+		width: 60%;
+		background-color: #fff;
+		position: absolute;
+		height: 100%;
+		left: 0;
+		top: 0;
+		text-align: center;
+	}
+	span:nth-child(2) {
+		height: 55px;
+		line-height: 60px;
+		width: 40%;
+		background-color: #db4a39;
+		text-align: center;
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: #fff;
+	}
+	&:hover span:nth-child(2) {
+		transition: 0.2s;
+		background-color: #C24334;
+		padding-left: 10px;
+	}
+	@keyframes bounce {
+		0% {
+			transform: scale(1, 1) translateY(0);
+		}
+		10% {
+			transform: scale(1.1, .9) translateY(0);
+		}
+		30% {
+			transform: scale(.9, 1.1) translateY(-100px);
+		}
+		50% {
+			transform: scale(1.05, .95) translateY(0);
+		}
+		57% {
+			transform: scale(1, 1) translateY(-7px);
+		}
+		64% {
+			transform: scale(1, 1) translateY(0);
+		}
+		100% {
+			transform: scale(1, 1) translateY(0);
+		}
+	}
+}
+
