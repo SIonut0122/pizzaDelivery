@@ -13,7 +13,7 @@
 
 	
 
-## Technology used:
+## Builth with:
 
 - HTML, SCSS, Javascript
 - React.js, React-redux, React-router
