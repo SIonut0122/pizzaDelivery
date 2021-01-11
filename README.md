@@ -20,10 +20,9 @@
 - Bootstrap
 - Webpack
 - Firebase
-- FaunaDB
 
 
 ![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/1p.png)
 ![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/4.png)
-![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/2.png)
+![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/2p.png)
 
