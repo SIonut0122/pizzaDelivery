@@ -22,7 +22,10 @@
 - Firebase
 
 
-![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/1p.png)
-![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/4.png)
-![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/Source%20code/src/images/2p.png)
+![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/images/1p.png)
+![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/images/2p.png)
+![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/images/3p.png)
+![alt text](https://raw.githubusercontent.com/SIonut0122/pizzaDelivery/gh-pages/images/4.png)
+
+
 
