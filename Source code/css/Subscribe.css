@@ -1,0 +1,128 @@
+.subscribe_container {
+  min-height: 200px;
+  min-width: 100%;
+  border-top: 1px solid #A1A1A1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1200px;
+  max-width: 100%;
+  min-width: 330px;
+  position: relative;
+  left: 50%;
+  margin-top: 10px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 35px 15px 15px 15px;
+}
+
+.scrb_txtone {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.scrb_wrap_inputs {
+  max-width: 100%;
+  min-height: 50px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scrb_wrapinp_span {
+  height: 40px;
+  min-width: 150px;
+  max-width: 100%;
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  margin: 10px;
+}
+.scrb_wrapinp_span input {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  top: 0;
+  left: 2px;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  padding: 0 10px 0 10px;
+}
+
+.scrb_subscribe_btn {
+  width: 150px;
+  height: 40px;
+  background-color: #ff9800;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  margin: 15px;
+}
+.scrb_subscribe_btn:hover {
+  color: #ff9800;
+  background-color: #fff;
+  border: solid #ff9800;
+}
+
+.scrb_subscr_success {
+  color: green;
+}
+
+.scrb_subscr_error {
+  color: red;
+}
+
+.scrb_subscribe_accpolicy {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 550px) {
+  .scrb_wrap_inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .scrb_wrapinp_span {
+    margin: 5px;
+    width: 300px;
+  }
+}

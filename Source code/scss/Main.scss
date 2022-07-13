@@ -1,0 +1,42 @@
+
+
+$orangeColor: #ff9800;
+.main_container {
+	width: 1200px;
+	max-width: 100%;
+	min-width: 330px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media screen and (max-width:900px) {
+	.main_container {
+		margin-top: 7px !important;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.main_container {
+		padding: 10px;
+	}
+}
+
+
+/* TOP CAROUSEL */
+
+.main_carousel_cont {
+	margin-top: 10px;
+	display: none;
+	.carousel-inner {
+		border-radius: 15px;
+		box-shadow: 0 0 9px 0 #000;
+	}
+}
+
+.pizza_offer_container {
+	background-color: #fff;
+	border-radius: 5px;
+	display: none;
+}
+
